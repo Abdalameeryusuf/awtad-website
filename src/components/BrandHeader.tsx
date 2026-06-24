@@ -1,10 +1,11 @@
 import Image from "next/image";
+import { asset } from "@/lib/basePath";
 
 export function BrandHeader({ subtitle }: { subtitle?: string }) {
   return (
     <header className="flex flex-col items-center gap-3 pb-1 pt-2 text-center">
       <Image
-        src="/awtad-logo.png"
+        src={asset("/awtad-logo.png")}
         alt="أوتاد"
         width={320}
         height={198}
